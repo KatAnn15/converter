@@ -1,0 +1,12 @@
+{
+  "name": "Currency Converter extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "extension to convert currencies",
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  },
+  "host_permissions": ["https://www.developer.chrome.com/*"],
+  "permissions": ["storage"]
+}

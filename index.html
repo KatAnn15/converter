@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="root">
+        <div id="settings">
+            <img src="./settings.svg" alt="open settings" id="settings-icon">
+            <div id="settings-content">
+                <span>Select default currency: </span>
+                <select id="default-currency-select">
+                    <option value="EUR">EUR</option>
+                    <option value="UAH">UAH</option>
+                    <option value="USD">USD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="GBP">GBP</option>
+                </select>
+            </div>
+        </div>
+        <div id="content">
+            <div id="overlay"></div>
+            <h1>Converter</h1>
+
+            <input type="number" id="amount" placeholder="Enter the amount" />
+            <div id="selections"> <select id="currency_from">
+                    <option value="EUR">EUR</option>
+                    <option value="UAH">UAH</option>
+                    <option value="USD">USD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="GBP">GBP</option>
+                </select>
+                <select id="currency_to">
+                    <option value="EUR">EUR</option>
+                    <option value="UAH">UAH</option>
+                    <option value="USD">USD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="GBP">GBP</option>
+                </select>
+            </div>
+
+            <button id="convert_btn">Convert Currency</button>
+            <div id="result">Result</div>
+        </div>
+    </div>
+
+
+</body>
+<script src="exchange.js"></script>
+
+</html>
